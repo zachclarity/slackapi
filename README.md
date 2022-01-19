@@ -5,7 +5,7 @@ The support bot initial template is below
 Set Environement Vars for
 
 <pre>
-export SLACK_SIGNING_SECRET=148943388387b57c6509382129c10b8c
+export SLACK_SIGNING_SECRET=< Slack Signing Secret >
 export BOT_TOKEN=< Bot User OAuth Token >
 export SLACK_APP_TOKEN= < Slack App Token >
 export SRE_SUPPORT_CHANNEL=Channel to Listen to.
