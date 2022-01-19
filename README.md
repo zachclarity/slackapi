@@ -6,6 +6,7 @@ Set Environement Vars for
 
 <pre>
 export SLACK_SIGNING_SECRET=< Slack Signing Secret >
+
 export BOT_TOKEN=< Bot User OAuth Token >
 export SLACK_APP_TOKEN= < Slack App Token >
 export SRE_SUPPORT_CHANNEL=Channel to Listen to.
