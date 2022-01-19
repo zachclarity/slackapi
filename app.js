@@ -8,10 +8,10 @@ const app = new App({
 
 app.event('message', async ({ event, client, context }) => {
     try {
-        if ( event.channel === "C02U4BEJ1HD") {
+        if ( event.channel === process.env.SRE_SUPPORT_CHANNEL) {
             console.log("from:(" +`<@${event.user}>`+ ") Msg:(" + event.text + ")")
             const result = await client.chat.postMessage({
-                channel: "C02U4BEJ1HD",
+                channel: process.env.SRE_SUPPORT_CHANNEL,
                 text: `Welcome to SRE Support Answers Bot, <@${event.user}>! 🎉 We will have an answer for you in a few minutes.`          });
         }
     } catch (error) {
