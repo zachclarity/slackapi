@@ -1,15 +1,32 @@
 # slackapi demo support Bot.
 
+## Description
+
+A simple Slack API BOLT demo template app.
+
 The support bot initial template is below
 
-Set Environement Vars for
+Includes a simple testPostServer.js to simulate the back end for the NLP process
 
 <pre>
-export SLACK_SIGNING_SECRET=< Slack Signing Secret >
 
-export BOT_TOKEN=< Bot User OAuth Token >
+Environment Variables
+
+========
+Required
+========
+export SLACK_SIGNING_SECRET=< Slack Signing Secret >
+export SLACK_BOT_TOKEN= <BOT OAUTH Token>
+export SRE_SUPPORT_CHANNEL=< Channel to Listen to. >
+export SLACK_SUPPORT_AGENT= < NLP Support Answer Agent >
+export SLACK_CLIENT_ID=< CLIENT ID >
+
+===========================
+Optional not used currently
+============================
 export SLACK_APP_TOKEN= < Slack App Token >
-export SRE_SUPPORT_CHANNEL=Channel to Listen to.
+export SLACK_USER_TOKEN=< User OAUTH Token ?>
+
 </pre>
 
 Key tools used.
