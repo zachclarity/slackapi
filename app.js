@@ -11,9 +11,8 @@ const app = new App({
 
 app.event('message', async ({ event, client, context }) => {
     try {
-        if ( event.channel === process.env.SRE_SUPPORT_CHANNEL) {
-            console.log("from:(" + `<@${event.user}>` + ") Msg:(" + event.ts + ")")
-
+        if ( event.channel === process.env.SRE_SUPPORT_CHANNEL && event.thread_ts === undefined) {
+            console.log("from:(" + `<@${event.user}>` + ") Msg:(" + event.type + ")")
             const result = await client.chat.postMessage({
                 thread_ts: event.ts,
                 channel: process.env.SRE_SUPPORT_CHANNEL,
